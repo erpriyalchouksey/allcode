@@ -1,0 +1,640 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color      : #444;
+}
+
+.navbar {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    display        : flex;
+    width          : 100%;
+    justify-content: space-between;
+    padding        : 10px;
+    color          : whitesmoke;
+}
+
+.navbar1 {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    display        : flex;
+    width          : 100%;
+    justify-content: space-between;
+    padding        : 15px;
+    color          : whitesmoke;
+    background-color: rgba(212, 20, 90, 0.8);;
+}
+
+
+.active-nav {
+    background     : rgba(212, 20, 90, 0.8);
+}
+
+.nav-2 {
+    position: absolute;
+    background: #f3f8fa;
+    color     : #444;
+    margin-top: 60px;
+    padding   : 20px;
+}
+
+.mar-common {
+    margin-top: 120px;
+}
+
+.navbar h1 {
+    font-size: 4vmin;
+}
+
+.nav-links {
+    display    : flex;
+    align-items: center;
+}
+
+.nav-links li a {
+    margin: 0 30px;
+    color : whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color          : whitesmoke;
+    text-decoration: underline;
+    font-weight    : bold;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+.ctn {
+    padding      : 10px 20px;
+    border       : 2px solid #fc036b;
+    border-radius: 30px;
+    color        : whitesmoke;
+}
+
+.ctn:hover {
+    background: #fc036b;
+}
+
+header {
+    width                     : 100%;
+    height                    : 100vh;
+    background-image          : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('https://st3.depositphotos.com/2325841/18609/i/600/depositphotos_186098220-stock-photo-businesspeople-working-at-office.jpg');
+    /* border-bottom-left-radius : 20%;
+    border-bottom-right-radius: 20%; */
+    background-size           : cover;
+    background-repeat         : no-repeat;
+    display                   : flex;
+    align-items               : center;
+    justify-content           : center;
+    animation                 : slide 20s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.5)),
+            url('https://st3.depositphotos.com/1000816/18719/i/600/depositphotos_187194380-stock-photo-business-colleagues-discussing-financial-charts.jpg');
+    }
+
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+            url('https://st3.depositphotos.com/3258807/18565/i/600/depositphotos_185654896-stock-photo-young-woman-setting-up-3d.jpg');
+    }
+
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+            url('https://st3.depositphotos.com/12985790/19451/i/600/depositphotos_194519414-stock-photo-selective-focus-multiethnic-businesswomen-workplace.jpg');
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.5)),
+            url('https://st4.depositphotos.com/12982378/31231/i/600/depositphotos_312319888-stock-photo-panoramic-shot-brokers-headsets-working.jpg');
+    }
+}
+
+.header-content {
+    margin-top: 50px;
+}
+
+.header-content h2 {
+    color          : whitesmoke;
+    font-size      : 5vmin;
+    display        : flex;
+    align-items    : center;
+    margin-bottom  : 40px;
+    justify-content: center;
+}
+
+.header-content p {
+    color : whitesmoke;
+    margin: 40px 260px;
+}
+
+.header-content a {
+    margin: 560px;
+}
+
+.line {
+    width        : 150px;
+    height       : 4px;
+    background   : #fc036b;
+    margin       : 10px auto;
+    border-radius: 5px;
+}
+
+.event h1 {
+    margin-top     : 100px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-size      : 4vmin;
+}
+
+.event p {
+    margin: 30px 100px;
+}
+
+.grid-container {
+    display              : grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap             : 10px;
+    padding              : 10px;
+}
+
+.grid-container .b-para {
+    background: #3a0061;
+}
+
+.grid-container>div {
+    background: #fff;
+    text-align: center;
+    padding   : 20px 0;
+    width     : 80%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin   : 20px;
+}
+
+.about-card {
+    margin : 80px 10px;
+    display: block;
+}
+
+.about-card p {
+    margin: 40px 0px;
+}
+
+.card p {
+    font-size    : 15px;
+    line-height  : 28px;
+    margin-bottom: 0;
+}
+
+.card-m {
+    margin-left: 30px;
+}
+
+.card:hover {
+    border: 2px solid rgba(212, 20, 90, 0.8);
+    ;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card1 {
+    box-shadow     : 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top     : 100px;
+    display        : flex;
+    align-items    : space-between;
+    justify-content: space-between;
+    margin         : 50px;
+    transition     : 0.3s;
+}
+
+.card-mm {
+    margin: 0;
+}
+
+.for-img {
+    margin: 50px;
+    width : 80%;
+}
+
+.mar-common1 {
+    margin-top: 160px;
+}
+
+.mar-common2 {
+    margin-bottom: 100px;
+}
+
+.container {
+    margin: 100px;
+}
+
+.card-text h4 {
+    margin: 10px auto;
+}
+
+.card-text1 h4 {
+    margin: 10px auto;
+}
+
+.card-text p {
+    margin-bottom: 50px;
+}
+
+.m-card {
+    margin-left: 95px;
+}
+
+.chng-div p {
+    margin-left: 95px;
+}
+
+.mar-right {
+    margin-right: 350px;
+}
+
+
+.footer {
+    width     : 100%;
+    min-height: 100px;
+    padding   : 20px 0px;
+    margin    : 0;
+    background: #3a0061;
+    text-align: center;
+}
+
+.footer p {
+    color : whitesmoke;
+    margin: 20px auto;
+}
+
+.slide:first-child {
+    animation: anim 8s infinite;
+}
+
+.last {
+    background     : #d4145a;
+    padding        : 30px;
+    color          : whitesmoke;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.img-p {
+    margin-right: 50px;
+}
+
+@keyframes anim {
+    0% {
+        margin-top: 0;
+    }
+
+    16% {
+        margin-top: -30px;
+    }
+
+    33% {
+        margin-top: -60px;
+    }
+
+    50% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -60px;
+    }
+
+    82% {
+        margin-top: -30px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.grid-container11 {
+    display              : grid;
+    grid-template-columns: auto auto;
+    padding              : 30px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding         : 10px;
+    text-align      : center;
+}
+
+.common-margin {
+    margin-top: 100px;
+}
+
+.grid-img:hover {
+    transform: scale(1.1);
+}
+
+.item2 {
+    grid-area  : menu;
+    margin-left: 50px;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container22 {
+    display: grid;
+    grid-template-areas:
+        ' footer footer footer footer menu menu menu menu'
+        '  main main right right menu menu menu menu';
+    gap    : 30px;
+    margin : 150px 80px 100px 80px;
+    padding: 10px;
+}
+
+.grid-container22>div {
+    text-align: center;
+    padding   : 20px 0;
+
+}
+
+.input-field {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.input-field input {
+    padding  : 15px 15px;
+    margin   : 20px;
+    font-size: 15px;
+}
+
+.input-field1 {
+    padding  : 15px;
+    width    : 92%;
+    font-size: 15px;
+}
+
+.input-field2 {
+    margin    : 20px;
+    width     : 92%;
+    font-size : 15px;
+    text-align: center;
+}
+
+button {
+    background: #d4145a;
+    border    : 0;
+    padding   : 10px 24px;
+    color     : #fff;
+    transition: 0.4s;
+    font-size : 15px;
+}
+
+.num-size {
+    font-size    : 48px;
+    display      : block;
+    color        : #d4145a;
+    margin-bottom: 10px;
+}
+
+.number-field {
+    background: #f3f8fa;
+    margin    : 80px 0px;
+    padding   : 50px;
+}
+
+.number-field div {
+    background: #f3f8fa;
+}
+
+.number-field div:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    line-height    : 28px;
+    padding        : 0;
+    margin         : 20px 50px;
+    text-transform : uppercase;
+    background     : #28a745;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    color          : whitesmoke;
+}
+
+.skill-css {
+    background: #007bff;
+    width     : 85%;
+}
+
+.skill-js {
+    background: #ffc107;
+    width     : 75%;
+}
+
+.skill-an {
+    background   : #dc3545;
+    width        : 65%;
+    margin-bottom: 50px;
+}
+
+.skills div {
+    margin: 5px;
+}
+
+.skill-1 {
+    background: #e9ecef;
+}
+
+.para-m {
+    margin: 30px 510px !important;
+}
+
+.img-circle {
+    width        : 140px;
+    border-radius: 50%;
+    border       : 4px solid #fff;
+    margin       : 0 500px;
+}
+
+.img-circle:hover {
+    transform: scale(1.1);
+}
+
+.para-m1 {
+    margin: 10px 510px !important;
+}
+
+.para-bb {
+    margin-bottom: 80px !important;
+}
+
+.grid-container44 {
+    display              : grid;
+    grid-template-columns: auto auto;
+    padding              : 10px;
+}
+
+.grid-container44 img:hover {
+    border: 2px solid black;
+}
+
+.grid-item4 {
+    padding   : 20px;
+    text-align: center;
+}
+
+.grid-item4 div {
+    width      : 80%;
+    margin-left: 50px;
+    z-index    : 10;
+}
+
+.b-img {
+    max-width: 12
+    0%;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width : 995px) {
+
+    .header-content a {
+        margin: 350px;
+    }
+
+    .nav-links li a {
+        margin: 0 10px;
+    }
+
+    .card1 {
+        font-size: 0.9rem;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .card-margin {
+        margin-left: 25px !important;
+    }
+
+    .event p {
+        margin: 0;
+    }
+}
+
+
+
+    @media only screen and (max-width : 650px) {
+        body {
+            background: red;
+        }
+        .navbar {
+            padding: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top     : 30px;
+            left    : 30px;
+        }
+
+        .header-content h2 {
+            font-size      : 3vmin;
+        }
+
+        .navbar h1 {
+            font-size: 2vmin;
+        }
+
+        .card h2 {
+            font-size: 35px;
+        }
+        
+        
+        .card p {
+            font-size    : 30px;
+        }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    .card1 {
+        font-size: 0.8rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .explore-content {
+        width: 100%;
+    }
+
+    .tours .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .image-gallery img {
+        max-width: 90%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
